@@ -400,6 +400,10 @@ header ul li a:hover
 }
 @media (max-width:392px)
 {
+    .aboutMe .whatIdo h3
+    {
+        margin:150px 0px 0px 50px;
+    }
     .aboutMe .whatIdo img
     {
         display:block;
