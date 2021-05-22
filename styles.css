@@ -84,7 +84,7 @@ header ul li a:hover
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     color:white;
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
 }
 .aboutMe .whatIdo h3
 {
@@ -148,7 +148,7 @@ header ul li a:hover
 
 .skills
 {
-    width: 40%;
+    width: 60%;
     margin:0px auto;
     /*height:calc(100vh - 120px);*/
     padding:60px 0px 60px 0px;
@@ -183,7 +183,7 @@ header ul li a:hover
     padding:10px;
 }
 
-/********* SKILLS **********/
+/********* PROYECTS **********/
 
 .proyects
 {
@@ -352,4 +352,62 @@ header ul li a:hover
     padding-bottom:10px;
 }
 
+/********* RESPONSIVE **********/
+
+@media (max-width: 850px){
+    .aboutMe
+    {
+        grid-template-columns: 100%;
+        
+    }
+    .aboutMe .resume .moreAboutMe .info h3
+    {
+        margin-top:0px;
+
+    }
+    .contact form 
+    {
+        grid-template-columns:100%;
+    }
+}
+
+@media (max-width: 712px)
+{
+    .aboutMe .whatIdo img
+    {
+        display:block;
+        margin:0px auto;
+    }
+    .aboutMe .whatIdo h3
+    {
+        font-size: 50px;
+    }
+    .aboutMe .resumeDownload
+    {
+        margin-top:20px;
+    }
+}
+@media (max-width:596px)
+{
+    .skills .icons
+    {
+        grid-template-columns:repeat(2, 1fr)
+    }
+    .aboutMe .whatIdo h3
+    {
+        font-size: 40px;
+    }
+}
+@media (max-width:392px)
+{
+    .aboutMe .whatIdo img
+    {
+        display:block;
+        margin:0px auto;
+    }
+    .skills .icons img
+    {
+        width:80px;
+    }
+}
 
