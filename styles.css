@@ -376,8 +376,8 @@ header ul li a:hover
   }
   .bar4, .bar-4{
       position: absolute;
-      height:50px;
-      width:50px;
+      height:30px;
+      width:30px;
       top:5px;
   }
   
@@ -397,22 +397,6 @@ header ul li a:hover
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
   }
-
-
-
-
-
-  @keyframes animationMenu {
-        from
-        {
-            transform: translateX(100%);
-        }
-        to
-        {
-            transform: translateX(0%);
-        }
-  }
-
 
   /********* RESPONSIVE **********/
 
@@ -441,7 +425,16 @@ header ul li a:hover
     }
     header ul 
     {
+        position: absolute;
         display:none;
+        top:50px;
+        background-color:#181818;
+        width:100%;
+        animation: animationMenu 300ms linear;
+    }
+    header ul li{
+        display:block;
+        text-align: center;
     }
     .container 
     {
@@ -461,6 +454,19 @@ header ul li a:hover
         margin-top:20px;
     }
 }
+
+
+@keyframes animationMenu {
+    from
+    {
+        transform: translateY(-100%);
+    }
+    to
+    {
+        transform: translateY(0%);
+    }
+}
+
 @media (max-width:596px)
 {
     .container {

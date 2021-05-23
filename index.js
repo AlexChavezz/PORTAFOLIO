@@ -5,18 +5,16 @@ function myFunction(x) {
 }
 
 
-
-
-const container = document.querySelector('.container');
-container.addEventListener('click', (e) => {
-    console.log(e.target)
-    if(e.target.classList.contains("bar4")){
-
-    }else{
-
-    }
-
-
-    // const list = document.getElementById('header-list');
-    // list.style.display = 'block';
+const menuList =  document.querySelector('#header-list');
+const menu = document.querySelector('.container').addEventListener('click', (e) => {
+    
+   if(e.target.classList.contains('bar4')){
+    menuList.style.display = 'block';
+    e.target.className = 'bar-4';
+   }else{
+    menuList.style.display = 'none';
+    e.target.className = 'bar4'
+   }
+   
+    
 });
