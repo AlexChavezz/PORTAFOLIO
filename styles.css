@@ -314,7 +314,7 @@ header ul li a:hover
     color:white;
 }
 
-/********* CONTACT **********/
+/********* FOOTER **********/
 
 .footer{
     height:200px;
@@ -328,7 +328,7 @@ header ul li a:hover
 }
 .footer .redes .images
 {
-    width: 20%;
+    width: 40%;
     display:grid;
     grid-template-columns:repeat(2, 1fr) ;
     margin: 0px auto;
