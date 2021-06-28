@@ -1,11 +1,12 @@
-
+// -> Whit this function we get a values from inputs <-
 function getValues() {
-    const name = document.querySelector('.name').value;
-    const email = document.querySelector('.email').value;
-    const message = document.querySelector('.textarea').value;
+    const name = document.querySelector('.name');
+    const email = document.querySelector('.email');
+    const message = document.querySelector('.textarea');
 
     return [name, email, message];
 }
+
 function inputBorders(value, color) {
     const elements = document.querySelectorAll('.input');
     elements.forEach(element => {
@@ -18,31 +19,21 @@ function invalideInput(value) {
     inputBorders(value, '#900');
 }
 function valideInput(value) {
-    inputBorders(value, '#007a00');
+        inputBorders(value, '#007a00');
 }
-function clearCamps() {
-    const name = document.querySelector('.name').value;
-    name === '';
-    const email = document.querySelector('.emai').value;
-    name === '';
-    const textarea = document.querySelector('.textarea').value;
-    name === '';
-    /*
-    const elements = document.querySelectorAll('.input');
-    elements.forEach(element => {
-        console.log(element)
-        element.value === value? element.value === '' : console.log('no funciona bro :(');
-    });*/
+function clearCamps(element) {
+    element.value =  '';
 }
+
 export const validation = document.querySelector('.form').addEventListener('submit', (e) => {
     e.preventDefault();
     const values = getValues();
-    console.log(values);
-    values.map(value => {
-        if (value.trim() === '') {
-            invalideInput(value);
+    values.forEach( element => {
+        if (element.value.trim() === '') {
+            invalideInput(element);
         } else {
-            valideInput(value);
+            valideInput(element);
+            clearCamps(element);
         }
     });
 });
@@ -52,12 +43,13 @@ export const validation = document.querySelector('.form').addEventListener('subm
 document.querySelector('.name').addEventListener('keyup', () => {
     const name = document.querySelector('.name');
 
-    if( name.value === '' ){
+    if (name.value === '') {
         name.style.border = '1px solid #ccc';
-    }else if( name.value.length > 2 ){
+    } else if (name.value.length > 2) {
         name.style.border = '1px solid #007a00'
-    }else{
+    } else {
         name.style.border = '1px solid #900';
     }
 });
+
 
