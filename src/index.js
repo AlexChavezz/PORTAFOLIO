@@ -1,9 +1,17 @@
 'use strict';
 import { validation } from './formValidation.js';
 
-function myFunction(x) {
-    x.classList.toggle("change");
-}
+const menuLogo = document.querySelector('.bar4').addEventListener('click', (e) => {
+    
+    const menu = document.querySelector('.container');
+    
+    if(menu.classList.contains('change')){
+        menu.classList.remove('change');
+    }else{
+        menu.classList.add('change');
+    }
+
+});
 
 const menuList = document.querySelector('#header-list');
 
@@ -42,8 +50,24 @@ for (let i = 0; i < listMenu.length; i++) {
 }
 
 
+document.querySelector('.form').addEventListener('submit', handleSubmit);
 
-
+async function handleSubmit(e){
+    
+    const form = new FormData(this);
+    console.log(form);
+    const response = await fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+            'Acept': 'application/json'
+        }
+    })
+    if (response.ok) {
+        this.reset();
+        alert('Gracias por contactarme');
+    }
+}
 /*
 
 document.querySelector('.form').addEventListener('submit', (e) => {
