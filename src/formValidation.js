@@ -23,6 +23,7 @@ function valideInput(value) {
 }
 function clearCamps(element) {
     element.value =  '';
+    element.style.border = '1px solid #ccc';
 }
 
 export const validation = document.querySelector('.form').addEventListener('submit', (e) => {
@@ -39,10 +40,10 @@ export const validation = document.querySelector('.form').addEventListener('subm
 });
 
 /* Form Validation name */
+const name = document.querySelector('.name');
 
 document.querySelector('.name').addEventListener('keyup', () => {
-    const name = document.querySelector('.name');
-
+    
     if (name.value === '') {
         name.style.border = '1px solid #ccc';
     } else if (name.value.length > 2) {
