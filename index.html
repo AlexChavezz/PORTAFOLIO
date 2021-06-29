@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="icon" type="image/png" href="./imgs/Logo2.png" />
+    <title>Alexis Chávez</title>
+</head>
+
+<body>
+    <div class="container showMenu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="bar4"></div>
+      </div>
+     
+    <header id="header">
+        <h1> <b>H</b> Alexis developer</h1>
+        <ul id="header-list">
+            <li class="list-group"><a href="#primeraAncla">About me</a></li>
+            <li class="list-group"><a href="#segundaAncla">Skills</a></li>
+            <li class="list-group"><a href="#terceraAncla">Proyects</a></li>
+            <li class="list-group"><a href="#cuartaAncla">Contact</a></li>
+        </ul>
+    </header>
+    <!--Primera parte About me-->
+    <a name="primeraAncla">
+    <div class=" aboutMe ">
+        <div class=" whatIdo ">
+            <h3 class="animate__animated animate__rubberBand">Hi i'm a <br> <b>Front End </b> developer.</h3>
+            <img src="imgs/undraw_Dev_focus_re_6iwt.svg " />
+        </div>
+        <div class=" resume ">
+            <div class=" moreAboutMe ">
+                <div class=" info ">
+                    <h3>About Me</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nam, itaque amet, eveniet quasi culpa
+                        blanditiis cumque iure nemo illum numquam. Architecto, corrupti ad. Consectetur corrupti quis
+                        vero
+                        dolorum ut!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat inventore ex
+                        labore obcaecati perspiciatis adipisci cumque assumenda officiis velit consequatur atque nam
+                        beatae
+                        culpa autem totam, distinctio voluptates nostrum quae. </p>
+                </div>
+            </div>
+            <div class=" resumeDownload ">
+                <h3>Resume (CV)</h3>
+                <p>Download</p>
+            </div>
+        </div>
+    </div>
+    <!--Segunda parte Skills-->
+    <a name="segundaAncla"></a>
+    <div class=" skills ">
+        <h3>Skills</h3>
+        <div class=" icons ">
+            <div class=" tecnology ">
+                <img src="./imgs/html-5.svg" />
+                <p>HTML</p>
+            </div>
+            <div class=" tecnology ">
+                <img src="./imgs/css-3.svg" />
+                <p>CSS3</p>
+            </div>
+            <div class=" tecnology ">
+                <img src="./imgs/icons8-javascript.svg" />
+                <p>JAVASCRIPT</p>
+            </div>
+            <div class=" tecnology ">
+                <img src="./imgs/recat.svg" />
+                <p>REACT</p>
+            </div>
+        </div>
+    </div>
+    <!--Tercera parte Proyects-->
+    <a name="terceraAncla"></a>
+   
+    <div class = " proyects ">
+        <h3>Proyects</h3>
+        <div class = " proyect">
+            <div class = " image ">
+               <img src="./imgs/giphy-logo-1.svg" alt="giphy-logo"/>
+            </div>
+            <div class = " description ">
+                <h3 class = " title ">GifApp</h3>
+                <span class = " proyect-description "> Gifapp It's a web aplication that use a Giphy api.</span>
+                <div class = " tecnologyAplicated ">
+                    <span> built whit: </span>
+                    <ul>
+                        <li>React</li>
+                        <li>Javascript</li>
+                        <li>Css3</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="links">
+                <button class="button"><a href="https://github.com/AlexChavezz/Gif-App" target="_blank">Watch Repository</a></button>
+                <button class="button"><a href="https://alexchavezz.github.io/Gif-App/" target="_blank">Visit site </a></button>
+            </div>
+        </div>
+    </div>
+    <!--Cuarta parte Contact-->
+    <a name="cuartaAncla"></a>
+    <div class="contact">
+        <div class="contact-title">
+            <h3>CONTACT ME</h3>
+        </div>
+        <form class="form" 
+        action="https://formspree.io/f/moqywrgl"
+        method="POST">
+            <input type="text" name="name" for="username" placeholder="Name" class="input name" autocomplete="off" />
+            <input type="email" name="email" for="input"placeholder="Email" class="input email" />
+            <textarea name="message"placeholder="Type you message here" class="input textarea"></textarea>
+            <input type = "submit" value = "Submit" />
+        </form>
+    </div>
+</div>
+    <footer class="footer">
+        <div class="redes">
+            <div class="images">
+                <a href="https://github.com/AlexChavezz" target="_blank"><img src="./imgs/icons8-github.svg" /></a>
+                <a href="https://www.linkedin.com/in/alexis-contreras-chavez-840810200/" target="_blank"><img src="./imgs/icons8-linkedin.svg" /></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>  Developed and designed by Alexis Chávez.<br /> &copy 2021. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="./src/index.js" type="module"></script>
+</body>
+
+</html>
