@@ -1,50 +1,38 @@
 'use strict';
 import { validation } from './formValidation.js';
 
- // -> This function make to touch a responsive barnav succesfull  <-
-document.querySelector('.bar4').addEventListener('click', () => {
+class VarNav{
+    constructor(){
+        this.menu = document.querySelector('#header-list');
+    }
+    showNav(){
+        this.menu.style.display = 'block';
+    }
+    hiddeNav(){
+        this.menu.style.display = 'none';
+    }
+}
+
+ // -> This events make to touch a responsive bar nav succesfull  <-
+const bar = document.querySelectorAll('.bar');
+bar.forEach( bar =>{
     const menu = document.querySelector('.container');
-
-    if(menu.classList.contains('change')){
-        menu.classList.remove('change');
-    }else{
-        menu.classList.add('change');
-    }
-
-});
-
-const menuList = document.querySelector('#header-list');
-
-function clearVarNav(e) {
-    menuList.style.display = 'none';
-    e.target.className = 'bar4'
-}
-function hiddenVarNav() {
-    const menu = document.querySelector('.bar-4');
-    menu.className = "bar4";
-    menuList.style.display = 'none';
-    const container = document.querySelector('.container');
-    container.classList.remove('change');
-}
-function showVarNav(e) {
-    menuList.style.display = 'block';
-    e.target.className = 'bar-4';
-}
-
-
-const menu = document.querySelector('.container').addEventListener('click', (e) => {
-
-    if (e.target.classList.contains('bar4')) {
-        showVarNav(e);
-    } else {
-        clearVarNav(e);
-    }
-
-    
+    const varNav = new VarNav();
+    bar.addEventListener('click', () => {
+        
+        if(menu.classList.contains('change')){
+            menu.classList.remove('change');
+            varNav.hiddeNav();
+        }else{
+            menu.classList.add('change'); 
+            varNav.showNav();
+        }
+    });
 });
 const listMenu = document.querySelectorAll('.list-group');
-for (let i = 0; i < listMenu.length; i++) {
-    listMenu[i].addEventListener('click', () => {
-        hiddenVarNav();
+listMenu.forEach(list => {
+    list.addEventListener('click', () => {
+        new VarNav().hiddeNav();
+        document.querySelector('.container').classList.remove('change');
     });
-}
+});
