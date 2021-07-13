@@ -1,5 +1,6 @@
 'use strict';
 import { validation } from './formValidation.js';
+import './darkMode.js'
 
 class VarNav{
     constructor(){
@@ -36,3 +37,5 @@ listMenu.forEach(list => {
         document.querySelector('.container').classList.remove('change');
     });
 });
+
+
