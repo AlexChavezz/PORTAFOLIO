@@ -33,8 +33,10 @@ bar.forEach( bar =>{
 const listMenu = document.querySelectorAll('.list-group');
 listMenu.forEach(list => {
     list.addEventListener('click', () => {
-        new VarNav().hiddeNav();
         document.querySelector('.container').classList.remove('change');
+        if(window.screen.width < 714){
+            new VarNav().hiddeNav();
+        }
     });
 });
 
