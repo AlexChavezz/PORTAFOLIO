@@ -28,10 +28,14 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-body{
-     background-image: url('imgs/pattern.png'); 
-    /*background-color:#0f0f0f;  segundo color para el fondo oscuro*/
 
+.body{
+    background-image: url('imgs/pattern.png'); 
+    color:#181818;
+}
+.bodyDark{
+   background-color:#0f0f0f;
+   color:white;
 }
 /********* HEADER **********/
 
