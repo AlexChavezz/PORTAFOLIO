@@ -12,16 +12,14 @@ button.addEventListener('click', () =>{
 
 function getContainers(){
     const body = document.querySelector('.body');
-    body.style.background = '#0f0f0f';
-    body.style.color = 'white'
+    body.classList.add('bodyDark');
 
     const submit =  document.querySelector('#submit');
     submit.classList.add('submitChange')
 }
 function getContainers2(){
     const body = document.querySelector('.body');
-    body.style.background = 'white';
-    body.style.color = '#181818'
+    body.classList.remove('bodyDark');
 
     const submit =  document.querySelector('#submit');
     submit.classList.remove('submitChange');
