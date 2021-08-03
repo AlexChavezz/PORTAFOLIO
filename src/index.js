@@ -1,5 +1,5 @@
 'use strict';
-import { validation } from './formValidation.js';
+// import { validation } from './formValidation.js';
 import './darkMode.js'
 
 class VarNav{
