@@ -1,26 +1,23 @@
-const button = document.querySelector('.button-switch');
-button.addEventListener('click', () =>{
-    if( button.classList.contains('active') ){
-        ( button.classList.remove('active') ) 
-        getContainers2();
+export const checkMode = () => {
+    const modeStatus = JSON.parse(localStorage.getItem('darkMode')) ; 
+    if( !modeStatus ) {
+          button.classList.add('active');
+        whiteMode();
     }else{
 
-        ( button.classList.add('active') )
-        getContainers();
-    } 
-});
+        button.classList.remove('active');
+        darkMode();
 
-function getContainers(){
-    const body = document.querySelector('.body');
-    body.classList.add('bodyDark');
-
-    const submit =  document.querySelector('#submit');
-    submit.classList.add('submitChange')
+    }
 }
-function getContainers2(){
+
+
+const button = document.querySelector('.button-switch');
+export const darkMode = () => {
+    const body = document.querySelector('.body');
+    body.classList.add('bodyDark');   
+}
+export const whiteMode = () => {
     const body = document.querySelector('.body');
     body.classList.remove('bodyDark');
-
-    const submit =  document.querySelector('#submit');
-    submit.classList.remove('submitChange');
 }

@@ -243,6 +243,7 @@ header ul li a:hover
     display: flex;
     justify-content:center;
     box-shadow: 2px 2px 0px solid #ccc;
+    margin: 20px 0px 0px 0px;
 }
 .proyects .proyect .button a{
     color:black;

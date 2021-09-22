@@ -1,6 +1,7 @@
-'use strict';
-// import { validation } from './formValidation.js';
-import './darkMode.js'
+import { checkMode, darkMode, whiteMode } from './darkMode.js';
+
+// document.addEventListener('DOMContentLoaded',checkMode);
+checkMode();
 
 class VarNav{
     constructor(){
@@ -40,4 +41,18 @@ listMenu.forEach(list => {
     });
 });
 
+const button = document.querySelector('.button-switch');
+button.addEventListener('click', () => {
 
+    const status = JSON.parse(localStorage.getItem('darkMode'));
+
+    if (  button.classList.contains('active') ){
+        button.classList.remove('active');
+        localStorage.setItem('darkMode', !status);
+        darkMode();
+    }else{
+        button.classList.add('active');
+        localStorage.setItem('darkMode', !status);
+        whiteMode();
+    }
+});
