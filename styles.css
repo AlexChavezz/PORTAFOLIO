@@ -37,6 +37,10 @@
    background-color:#0f0f0f;
    color:white;
 }
+.uppercase
+{
+    text-transform:uppercase;
+}
 /********* HEADER **********/
 
 header
@@ -126,6 +130,9 @@ header ul li a:hover
 }   
 .aboutMe .resume .moreAboutMe .info p
 {
+    margin-top:20px;
+    letter-spacing:1px;
+    font-size:16px;
     line-height:25px;
 }
 .aboutMe .resume 
@@ -144,13 +151,10 @@ header ul li a:hover
     font-family: "Rubik";
     font-size:13px;
     color:white;
-}
-.aboutMe .resumeDownload h3, p
-{
-    margin:5px 0px 0px 10px;
-}
-.aboutDescription{
-    margin:10px 0px 0px 0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
 }
 /********* SKILLS **********/
 
