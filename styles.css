@@ -144,7 +144,7 @@ header ul li a:hover
 {
     height: 50px;
     width: 150px;
-    background-color:#181818;
+    background-color:#a14bfb;
     border-radius:5px;
     margin: 0px auto;
     cursor:pointer;
@@ -250,22 +250,22 @@ header ul li a:hover
     margin: 20px 0px 0px 0px;
 }
 .proyects .proyect .button a{
-    color:black;
+    color:white;
 }
 .proyects .proyect .button{
     margin:2px;
+    background-color: #a14bfb;
+    border-radius:5px;
     padding:8px;
     color:black;
     outline:none;  
     border: 1px solid #ccc;
-    background-color: white;
     animation:all 300ms;
+    border:none;
 }
 .proyects .proyect .button:hover{
     cursor: pointer;
-    background-color: #181818;
-    border-radius:5px;
-  
+    background-color: #181818;  
 }
 .proyects .proyect .button:hover a{
     color:white;
