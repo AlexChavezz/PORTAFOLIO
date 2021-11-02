@@ -295,7 +295,7 @@ header ul li a:hover
     display:block;
     margin:0px auto;
     width:100px;
-
+    transition: all .1s ease-in;
 }
 .proyects .proyect .image img:hover
 {
