@@ -329,17 +329,92 @@ header ul li a:hover
     min-height:500px;
     padding: 60px 0px;
     margin:0px auto;
+    font-family: "Rubik";
+    margin-bottom:100px;
 }
 .contact h3
 {
+    display: flex;
+    flex-direction:column;
     color:#a14bfb;
-    font-size:40px;
+    font-size:46.8px;
     font-family:"Rubik";
     text-transform: uppercase;
     text-align:center;
     margin-bottom:50px;
 }
-.contact form
+.contact .form-container {
+    display: flex;
+    width:100%;
+}
+.contact .form-container form {
+    width:50%;
+}
+.contact .form-container form .form-control {
+    display: flex;
+    padding:20px 0px;
+    width:100%;
+}
+.contact .form-container form .form-control label {
+    width:20%;
+}
+.contact .form-container form .form-control input[type="text"],input[type="email"] {
+    width:80%;
+    padding:10px;
+    border-radius:5px;
+    width: 100% ;
+    border: 1px solid #ccc;
+}
+.contact .form-container form .form-control input[type="text"]:focus,input[type="email"] {
+    outline:none;
+    background-color: rgb(218, 214, 214);
+}
+.contact .form-container form .form-control textarea {    
+    border-radius:5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    padding:10px;
+    width:100% ;
+    height:100px;
+}
+.contact .form-container form .form-control textarea:focus {
+    outline:none;
+    background-color: rgb(218, 214, 214);
+}
+.contact .form-container form .submit-form {
+    background-color: #a14bfb;
+    border:none;
+    cursor: pointer;
+    color:#fff;
+    height: 30px;
+    width:100px;
+    margin:0px auto;
+    display: block;
+    margin-top:30px;
+}
+.contact .form-container form .submit-form:hover { 
+    border: .5px solid #ccc;
+}
+.contact .form-container form .submit-form:active { 
+    transform: scale(1.2);
+}
+
+.contact .form-container article {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.contact .form-container article p {
+    font-size:20px;
+    padding:20px;
+}
+
+.contact .form-container article img{
+    width:150px;
+}
+/* .contact form
 {
     display: grid;
     grid-template-columns:80%;
@@ -398,7 +473,7 @@ header ul li a:hover
 .contact .form .submitChange:hover{
     background-color:white;
     color:#181818;
-}
+} */
 
 /********* FOOTER **********/
 
