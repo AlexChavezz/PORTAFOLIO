@@ -1,6 +1,9 @@
 import { checkMode, darkMode, whiteMode } from './darkMode.js';
+import ValidationForm from './formValidation.js';
 
-// document.addEventListener('DOMContentLoaded',checkMode);
+// const validation = new ValidationForm();
+
+// document.addEventListener('DOMContentLoaded',validation.validateCaptcha());
 checkMode();
 
 class VarNav{
@@ -56,3 +59,18 @@ button.addEventListener('click', () => {
         whiteMode();
     }
 });
+
+// -> Form Validation
+
+document.querySelector('form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const validation = new ValidationForm();
+    const isValidate = validation.validateFields();
+    if( isValidate ){
+        
+    }else{
+        validation.fieldEmptyStyles();
+        validation.alert();
+    }
+});
+
