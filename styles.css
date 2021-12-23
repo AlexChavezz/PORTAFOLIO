@@ -275,7 +275,7 @@ header ul li a:hover {
     display: flex;
     justify-content: center;
     box-shadow: 2px 2px 0px solid #ccc;
-    margin: 20px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
 }
 
 .proyects .proyect .button a {
@@ -381,9 +381,15 @@ header ul li a:hover {
     border-radius: 5px;
     width: 100%;
     border: 1px solid #ccc;
+    background-color: #fff;
 }
 
-.contact .form-container form .form-control input[type="text"]:focus, input[type="email"], input[type="number"] {
+.contact .form-container form .form-control input[type="text"]:focus {
+    outline: none;
+    background-color: rgb(218, 214, 214);
+}
+
+.contact .form-container form .form-control input[type="email"]:focus {
     outline: none;
     background-color: rgb(218, 214, 214);
 }
@@ -725,13 +731,15 @@ header ul li a:hover {
 
 @media (max-width: 1168px) {
     .contact .form-container article {
-        width:30%;
+        width: 30%;
     }
+
     .contact .form-container article p {
-        display:none;
+        display: none;
     }
+
     .contact .form-container form {
-        width:70%;
+        width: 70%;
     }
 
 }
@@ -750,18 +758,22 @@ header ul li a:hover {
     .contact form {
         grid-template-columns: 100%;
     }
+
     .contact .form-container {
-        flex-direction:column;
+        flex-direction: column;
     }
+
     .contact .form-container article {
-        width:100%;
-        margin-top:70px;
-    }    
+        width: 100%;
+        margin-top: 70px;
+    }
+
     .contact .form-container article p {
         display: block;
     }
+
     .contact .form-container form {
-        width:100%;
+        width: 100%;
     }
 
 }
@@ -805,6 +817,15 @@ header ul li a:hover {
     .proyects .container-proyects {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .contact .form-container form .form-control {
+        flex-direction: column;
+    }
+
+    .contact .form-container form .form-control label {
+        padding: 10px;
+    }
+
 }
 
 @keyframes animationMenu {
@@ -837,6 +858,15 @@ header ul li a:hover {
     .changeMode {
         bottom: 40px;
         right: 30px;
+    }
+    .proyects .container-proyects .proyect {
+        padding-top:70px;
+    }
+    .contact .form-container form .form-control input[type="text"], input[type="email"], input[type="number"], textarea {
+        padding:5px;
+    }
+    .contact .form-container form .form-control textarea {
+        height: 60px;
     }
 }
 
