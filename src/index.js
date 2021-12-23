@@ -74,3 +74,8 @@ document.querySelector('form').addEventListener('submit', (e) => {
     }
 });
 
+
+fetch('http://localhost:8080/api/send')
+.then( res => res.json())
+.then( res => console.log(res))
+
