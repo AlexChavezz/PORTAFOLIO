@@ -62,20 +62,20 @@ button.addEventListener('click', () => {
 
 // -> Form Validation
 
-document.querySelector('form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const validation = new ValidationForm();
-    const isValidate = validation.validateFields();
-    if( isValidate ){
+// document.querySelector('form').addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     const validation = new ValidationForm();
+//     const isValidate = validation.validateFields();
+//     if( isValidate ){
         
-    }else{
-        validation.fieldEmptyStyles();
-        validation.alert();
-    }
-});
+//     }else{
+//         validation.fieldEmptyStyles();
+//         validation.alert();
+//     }
+// });
 
 
-fetch('http://localhost:8080/api/send')
-.then( res => res.json())
-.then( res => console.log(res))
+// fetch('http://localhost:8080/api/send')
+// .then( res => res.json())
+// .then( res => console.log(res))
 

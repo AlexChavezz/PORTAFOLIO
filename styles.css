@@ -229,7 +229,7 @@ header ul li a:hover {
 .proyects {
     display: grid;
     /* grid-template-rows: repeat(2, 1fr); */
-    width: 80%;
+    width: 60%;
     padding: 60px 0px;
     margin: 0px auto;
     font-family: "Rubik";
@@ -275,7 +275,7 @@ header ul li a:hover {
     display: flex;
     justify-content: center;
     box-shadow: 2px 2px 0px solid #ccc;
-    padding: 50px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
 }
 
 .proyects .proyect .button a {
