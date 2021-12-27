@@ -228,7 +228,6 @@ header ul li a:hover {
 
 .proyects {
     display: grid;
-    /* grid-template-rows: repeat(2, 1fr); */
     width: 60%;
     padding: 60px 0px;
     margin: 0px auto;
