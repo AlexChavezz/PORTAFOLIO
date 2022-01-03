@@ -65,6 +65,37 @@ body::-webkit-scrollbar-button:increment, .contenedor::-webkit-scrollbar-button 
 .uppercase {
     text-transform: uppercase;
 }
+.warning {
+    /* opacity: .4; */
+    position: relative;
+}
+.warning .warnig_container {
+    width: 100%;
+    height: 100%;
+    background:#181818c0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+}
+.warning button:disabled {
+    /* opacity: .4; */
+    color: #fff;
+}
+.warning button:hover {
+    background-color:  #a14bfb !important;
+    color: black;
+}
+.warning .warning_img{
+    width: 200px;
+}
+.warning .warning_description {
+    color: white;
+    font-size:30px;
+
+} 
+
 
 /********* HEADER **********/
 
