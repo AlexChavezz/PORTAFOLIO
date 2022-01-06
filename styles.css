@@ -898,6 +898,9 @@ header ul li a:hover {
     .contact .form-container form .form-control textarea {
         height: 60px;
     }
+    .proyects {
+        width: 100%;
+    }
 }
 
 @media (max-width:392px) {
